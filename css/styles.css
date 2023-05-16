@@ -157,6 +157,7 @@ img {
     color: #2E2F42;
     padding-top: 24px;
     padding-bottom: 24px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -182,6 +183,7 @@ img {
     text-decoration: none;
     font-style: normal;
     color: #434455;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cont-link:hover,
@@ -240,6 +242,7 @@ img {
     height: 56px;
     cursor: pointer;
     margin: 0 auto;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover,
@@ -247,7 +250,6 @@ img {
     background: #404BBF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-
 }
 
 /* =================== +++ of this comp ============= */
@@ -376,6 +378,7 @@ img {
     background-color: #4D5AE5;
     border-radius: 50%;
     color: #F4F4FD;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-icon {
@@ -422,7 +425,7 @@ img {
     justify-content: center;
     border: #8E8F99 1px solid;
     color: #8E8F99;
-
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
@@ -479,6 +482,7 @@ img {
 .footer-link {
     display: inline-block;
     margin-bottom: 16px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .p-footer {
@@ -519,6 +523,7 @@ img {
     width: 100%;
     height: 100%;
     padding: 8px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-icon {
@@ -529,6 +534,50 @@ img {
 .footer-soc-link:focus {
     background-color: #31D0AA;
 
+}
+
+
+/* ================MODAL============ */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(46, 47, 66, 0.4);
+}
+
+.modal {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: #FCFCFC;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    width: 408px;
+    height: 576px;
+    top: 50%;
+    left: 50%;
+    padding: 24px;
+}
+
+.modal-close {
+    fill: #2E2F42;
+    background-color: #E7E9FC;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
 }
 
 /* ============== PORTFOLIO ============ */
@@ -563,6 +612,7 @@ img {
     border-radius: 4px;
     cursor: pointer;
     padding: 12px 24px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
@@ -588,6 +638,7 @@ img {
 
 .port-link {
     display: block;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .port-link:hover,
