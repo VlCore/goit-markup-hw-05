@@ -168,6 +168,7 @@ img {
 .current-link {
     color: #404BBF;
     position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current-link::after {
@@ -198,6 +199,7 @@ img {
     text-decoration: none;
     font-style: normal;
     color: #434455;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .cont-link:hover,
@@ -257,6 +259,7 @@ img {
     height: 56px;
     cursor: pointer;
     margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -382,6 +385,7 @@ img {
 .team-soc-item {
     width: 40px;
     height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-soc-link {
@@ -428,6 +432,7 @@ img {
 .customers-list-item {
     width: calc((100% - 120px) / 6);
     height: 88px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link {
@@ -526,6 +531,7 @@ img {
 .footer-soc-item {
     width: 40px;
     height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link {
@@ -594,7 +600,7 @@ img {
     justify-content: center;
     margin-left: auto;
     cursor: pointer;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .modal-close:hover,
@@ -646,7 +652,7 @@ img {
     border-radius: 4px;
     cursor: pointer;
     padding: 12px 24px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,
@@ -681,6 +687,7 @@ img {
 .port-bside-photos {
     position: relative;
     overflow: hidden;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .port-bside-text {
@@ -700,32 +707,33 @@ img {
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.port-photos:hover .port-bside-text {
+.port-link:hover .port-bside-text {
     transform: translateY(0);
 }
 
-.port-photos:focus .port-bside-text {
+.port-link:focus .port-bside-text {
     transform: translateY(0);
+}
 
 
-    .port-link:hover,
-    .port-link:focus {
-        box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+.port-link:hover,
+.port-link:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 
 
-    .port-photos-text {
-        display: flex;
-        flex-direction: column;
-        padding: 32px 16px;
-        text-align: left;
-        border-bottom: #E7E9FC 1px solid;
-        border-left: #E7E9FC 1px solid;
-        border-right: #E7E9FC 1px solid;
-    }
+.port-photos-text {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 16px;
+    text-align: left;
+    border-bottom: #E7E9FC 1px solid;
+    border-left: #E7E9FC 1px solid;
+    border-right: #E7E9FC 1px solid;
+}
 
-    .port-little-title {
-        margin-bottom: 8px;
-    }
+.port-little-title {
+    margin-bottom: 8px;
+}
